@@ -5,8 +5,8 @@ all: build
 
 build: server client
 
-server: server.cpp
-	$(CC) $(CFLAGS) -o server server.cpp
+server: Server.cpp
+	$(CC) $(CFLAGS) -o server Server.cpp
 
 client: Langton.cpp
 	$(CC) $(CFLAGS) -o client Langton.cpp
