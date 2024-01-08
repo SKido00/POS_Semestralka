@@ -293,7 +293,12 @@ void handleCollision(Kolizia kolizia) {
 
         // Zmeni logiku pohybu pre polovicu mravcov, ktorý sa zúčastnili kolízie
         for (std::size_t i = 0; i < mravceVZrazke.size() / 2; ++i) {
-            mravce[mravceVZrazke[i]].inverzna = true;
+            if (!mravce[mravceVZrazke[i]].inverzna) {
+                mravce[mravceVZrazke[i]].inverzna = true;
+            } else if(mravce[mravceVZrazke[i]].inverzna) {
+                mravce[mravceVZrazke[i]].inverzna = false;
+            }
+
         }
     }
 }
