@@ -227,12 +227,12 @@ void nahodneNastaveniePozicieMravcov() {
 // Funkcia na manuálne určenie počiatočných pozícií mravcov v mriežke.
 void manualneNastaveniePozicieMravcov() {
     for (int i = 0; i < POCET_MRAVCOV; ++i) {
-        std::cout << "Zadaj pociatocne súradnice pre mravca " << (i + 1) << " (x y): ";
+        std::cout << "Zadaj pociatocne suradnice pre mravca " << (i + 1) << " (x y):\n";
         std::cin >> mravce[i].x >> mravce[i].y;
 
         // Kontrola, či zadané súradnice nie sú mimo rozmerov pola
         if (mravce[i].x < 0 || mravce[i].x >= VELKOST_POLA || mravce[i].y < 0 || mravce[i].y >= VELKOST_POLA) {
-            std::cout << "Suradnice mimo rozsah. Skuste to znova." << std::endl;
+            std::cout << "Suradnice mimo rozsah. Skuste to znova. \n";
             --i;  // Vrátime sa k predchádzajúcej iterácii cyklu, aby sme mohli zadávať súradnice znovu
         }
     }
