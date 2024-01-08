@@ -471,9 +471,9 @@ int main() {
         std::cin >> nazovSuboru;
 
         ulozeniePolaDoSuboru(nazovSuboru);
-        std::cout << "Pole bolo uspesne ulozene. \n" << std::endl;
+        std::cout << "Pole bolo uspesne ulozene.\n" << std::endl;
     } else {
-        std::cout << "Pole nebolo ulozene. \n" << std::endl;
+        std::cout << "Pole nebolo ulozene.\n" << std::endl;
     }
     return 0;
 }
